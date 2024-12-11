@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="assets/css/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="assets/js/tailwind.js"></script>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <!-- Header Section Start -->
+    <header class="bg-lime-50/90 pt-1 pb-4 mb-10 sticky top-0 shadow-md z-50">
+        <div class="container m-auto lg:px-16">
+            <div class="navbar">
+                <div class="navbar-start ">
+                    <a href="blog.html" class="btn text-xl font-bold bg-[#B4F461]">Blog</a>
+                </div>
+
+                <div class="navbar-center">
+                    <img src="assets/images/logo.png" alt="Image" class="">
+                    <a class="btn btn-ghost text-3xl font-bold md:block md:text-2xl hidden pt-1">Donate Bangladesh</a>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="flex justify-end items-center">
+                        <img src="assets/images/coin.png" class="w-8" alt="Image">
+                        <span class="text-xl font-semibold ml-1"> <span id="available-balance">5500</span> BDT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menu Section Start  -->
+        <div id="menu-items" class="text-center mt-8 mb-4 space-x-5">
+            <button item="donation" class="menu-item btn text-xl font-semibold bg-[#B4F461]">Donation</button>
+            <button item="donation-history" class="menu-item btn text-xl font-semibold ">History</button>
+        </div>
+
+        <!-- Menu Section End -->
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Main Section Start -->
+    <main class="container m-auto">
+        <div id="main-menu-content">
+            <!-- Donate Container Start  -->
+            <div menu="donation-menu-content" class="donation-menu-content space-y-6 lg:px-20">
+                <!-- Single Honate Item Start  -->
+                <div class="card lg:flex lg:flex-row bg-base-100 shadow border p-4">
+                    <figure class="lg:w-2/5 h-auto rounded-b-lg">
+                        <img src="assets/images/donates/donate-1.png" alt="Album" class="h-full w-full object-cover " />
+                    </figure>
+                    <div class="card-body lg:w-3/5 flex flex-col justify-between">
+                        <div class="flex items-center bg-[#F3F3F3] lg:w-1/3 w-1/2 rounded-md px-3 py-1">
+                            <img src="assets/images/coin.png" class="w-8" alt="Image">
+                            <span class="text-xl font-semibold ml-1"><span class="total-donate-amount">3000</span>
+                                BDT</span>
+                        </div>
+                        <h2 class="card-title text-2xl py-1 text-gray-950 event-title">
+                            Donate for Flood at Noakhali, Bangladesh
+                        </h2>
+                        <p class="text-justify text-gray-600">
+                            The recent floods in Noakhali have caused significant damage to homes and infrastructure.
+                            Your
+                            donation will help provide essential supplies to those affected by this disaster. Every
+                            contribution, big or small, makes a difference. Please join us in supporting the relief
+                            efforts
+                            and making a positive impact on the lives of those in need.
+                        </p>
+                        <div class="flex flex-col items-center">
+                            <form action="" class="w-full text-center" onsubmit="handleSubmit(event)">
+                                <input type="text" name="amount" placeholder="Write Donation Amount"
+                                    class="input input-bordered w-full h-10 my-4" />
+                                <button type="submit" class="btn btn-md text-xl font-semibold bg-[#B4F461]">
+                                    Donate Now
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Honate Item End  -->
+                <!-- Single Honate Item Start  -->
+                <div class="card lg:flex lg:flex-row bg-base-100 shadow border p-4">
+                    <figure class="lg:w-2/5 h-auto rounded-b-lg">
+                        <img src="assets/images/donates/donate-2.jpeg" alt="Album"
+                            class="h-full w-full object-cover " />
+                    </figure>
+                    <div class="card-body lg:w-3/5 flex flex-col justify-between">
+                        <div class="flex items-center bg-[#F3F3F3] lg:w-1/3 w-1/2 rounded-md px-3 py-1">
+                            <img src="assets/images/coin.png" class="w-8" alt="Image">
+                            <span class="text-xl font-semibold ml-1"><span class="total-donate-amount">2500</span>
+                                BDT</span>
+                        </div>
+                        <h2 class="card-title text-2xl py-1 text-gray-950 event-title">
+                            Best African Non-Profit Organizations
+                        </h2>
+                        <p class="text-justify text-gray-600">
+                            Top African charities maintain a high level of transparency and accountability. They provide
+                            detailed reports on how funds are used, ensuring that donors know exactly where their money
+                            is going. Look for charities that publish annual reports, financial statements, and impact
+                            assessments. Transparency builds trust and reassures donors that their contributions are
+                            making a real difference.
+                        </p>
+                        <div class="flex flex-col items-center">
+                            <form action="" class="w-full text-center" onsubmit="handleSubmit(event)">
+                                <input type="text" name="amount" placeholder="Write Donation Amount"
+                                    class="input input-bordered w-full h-10 my-4" />
+                                <button type="submit" class="btn btn-md text-xl font-semibold bg-[#B4F461]">
+                                    Donate Now
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Honate Item End  -->
+                <!-- Single Honate Item Start  -->
+                <div class="card lg:flex lg:flex-row bg-base-100 shadow border p-4">
+                    <figure class="lg:w-2/5 h-auto rounded-b-lg">
+                        <img src="assets/images/donates/donate-3.jpg" alt="Album" class="h-full w-full object-cover " />
+                    </figure>
+                    <div class="card-body lg:w-3/5 flex flex-col justify-between">
+                        <div class="flex items-center bg-[#F3F3F3] lg:w-1/3 w-1/2 rounded-md px-3 py-1">
+                            <img src="assets/images/coin.png" class="w-8" alt="Image">
+                            <span class="text-xl font-semibold ml-1"><span class="total-donate-amount">6000</span>
+                                BDT</span>
+                        </div>
+                        <h2 class="card-title text-2xl py-1 text-gray-950 event-title">
+                            Food Charities for Thanksgiving in 2024
+                        </h2>
+                        <p class="text-justify text-gray-600">
+                            The Sudanese American Physicians Association (SAPA) is a nonprofit that provides medical and
+                            humanitarian aid, especially in times of crisis. SAPA’s commitment to Thanksgiving comes
+                            from a belief that everyone deserves a meal to gather around, a meal that brings comfort and
+                            togetherness.
+                        </p>
+                        <div class="flex flex-col items-center">
+                            <form action="" class="w-full text-center" onsubmit="handleSubmit(event)">
+                                <input type="text" name="amount" placeholder="Write Donation Amount"
+                                    class="input input-bordered w-full h-10 my-4" />
+                                <button type="submit" class="btn btn-md text-xl font-semibold bg-[#B4F461]">
+                                    Donate Now
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Honate Item End  -->
+                <!-- Single Honate Item Start  -->
+                <div class="card lg:flex lg:flex-row bg-base-100 shadow border p-4">
+                    <figure class="lg:w-2/5 h-auto rounded-b-lg">
+                        <img src="assets/images/donates/donate-4.jpg" alt="Album" class="h-full w-full object-cover " />
+                    </figure>
+                    <div class="card-body lg:w-3/5 flex flex-col justify-between">
+                        <div class="flex items-center bg-[#F3F3F3] lg:w-1/3 w-1/2 rounded-md px-3 py-1">
+                            <img src="assets/images/coin.png" class="w-8" alt="Image">
+                            <span class="text-xl font-semibold ml-1"><span class="total-donate-amount">10000</span>
+                                BDT</span>
+                        </div>
+                        <h2 class="card-title text-2xl py-1 text-gray-950 event-title">
+                            Medical Aid Donation
+                        </h2>
+                        <p class="text-justify text-gray-600">
+                            One of the biggest benefits of getting involved in charity work is the sense of purpose and
+                            fulfillment it can bring to your employees. By providing opportunities for your team to
+                            volunteer their time and skills, you can foster a sense of community and teamwork within
+                            your organization. Additionally, charitable giving and volunteer work can help employees
+                            develop new skills, gain valuable experiences, and build relationships with people who share
+                            their values.
+                        </p>
+                        <div class="flex flex-col items-center">
+                            <form action="" class="w-full text-center" onsubmit="handleSubmit(event)">
+                                <input type="text" name="amount" placeholder="Write Donation Amount"
+                                    class="input input-bordered w-full h-10 my-4" />
+                                <button type="submit" class="btn btn-md text-xl font-semibold bg-[#B4F461]">
+                                    Donate Now
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Honate Item End  -->
+                <!-- Single Honate Item Start  -->
+                <div class="card lg:flex lg:flex-row bg-base-100 shadow border p-4">
+                    <figure class="lg:w-2/5 h-auto rounded-b-lg">
+                        <img src="assets/images/donates/donate-5.jpg" alt="Album" class="h-full w-full object-cover " />
+                    </figure>
+                    <div class="card-body lg:w-3/5 flex flex-col justify-between">
+                        <div class="flex items-center bg-[#F3F3F3] lg:w-1/3 w-1/2 rounded-md px-3 py-1">
+                            <img src="assets/images/coin.png" class="w-8" alt="Image">
+                            <span class="text-xl font-semibold ml-1"><span class="total-donate-amount">19500</span>
+                                BDT</span>
+                        </div>
+                        <h2 class="card-title text-2xl py-1 text-gray-950 event-title">
+                            Zakat in the Quran and Hadith
+                        </h2>
+                        <p class="text-justify text-gray-600">
+                            In Islam, Zakat is not just a financial obligation; it is a means of purifying one’s wealth
+                            and contributing to the welfare of society. This article delves into the Quranic verses and
+                            Hadith that illuminate the concept of Zakat, shedding light on its role in fostering
+                            compassion and justice.
+
+                        </p>
+                        <div class="flex flex-col items-center">
+                            <form action="" class="w-full text-center" onsubmit="handleSubmit(event)">
+                                <input type="text" name="amount" placeholder="Write Donation Amount"
+                                    class="input input-bordered w-full h-10 my-4" />
+                                <button type="submit" class="btn btn-md text-xl font-semibold bg-[#B4F461]">
+                                    Donate Now
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Honate Item End  -->
+                <!-- Single Honate Item Start  -->
+                <div class="card lg:flex lg:flex-row bg-base-100 shadow border p-4">
+                    <figure class="lg:w-2/5 h-auto rounded-b-lg">
+                        <img src="assets/images/donates/donate-6.jpg" alt="Album" class="h-full w-full object-cover " />
+                    </figure>
+                    <div class="card-body lg:w-3/5 flex flex-col justify-between">
+                        <div class="flex items-center bg-[#F3F3F3] lg:w-1/3 w-1/2 rounded-md px-3 py-1">
+                            <img src="assets/images/coin.png" class="w-8" alt="Image">
+                            <span class="text-xl font-semibold ml-1"><span class="total-donate-amount">5500</span>
+                                BDT</span>
+                        </div>
+                        <h2 class="card-title text-2xl py-1 text-gray-950 event-title">
+                            Contributing to our food donation program.
+                        </h2>
+                        <p class="text-justify text-gray-600">
+                            Charity work is a noble cause that can help make a positive impact on society, and it's
+                            important for businesses to get involved. By partnering with a charity or cause that aligns
+                            with your company's values and goals, you can not only make a difference but also improve
+                            your brand reputation and increase employee engagement.
+                        </p>
+                        <div class="flex flex-col items-center">
+                            <form action="" class="w-full text-center" onsubmit="handleSubmit(event)">
+                                <input type="text" name="amount" placeholder="Write Donation Amount"
+                                    class="input input-bordered w-full h-10 my-4" />
+                                <button type="submit" class="btn btn-md text-xl font-semibold bg-[#B4F461]">
+                                    Donate Now
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Honate Item End  -->
+            </div>
+            <!-- Donate Container End  -->
+
+            <!-- Donation History Start  -->
+            <div menu="donation-history-menu-content" id="donation-history-menu-content"
+                class="hidden donation-history-menu-content space-y-6 lg:px-20 px-4">
+                <p id="not-found-message" class="text-red-700 text-3xl font-bold text-center py-16">No donation history
+                    at this time.</p>
+            </div>
+            <!-- Donation History End  -->
+        </div>
+    </main>
+    <!-- Main Section End -->
+
+    <!-- Footer Section Start  -->
+    <footer class="footer footer-center text-base-content mt-12 p-4 py-8 bg-lime-50/90">
+        <aside>
+            <p class="text-base">Copyright © All right reserved by <span class="font-bold">Hasibur Rahman Biplab</span></p>
+        </aside>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Success Modal Start -->
+    <dialog id="success_modal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box text-center flex flex-col justify-center items-center">
+            <h3 class="text-4xl font-bold">Congrates!</h3>
+            <img src="assets/images/coin.png" alt="Image" class="pt-5">
+            <p class="py-4">You Have Donated for Humankind</p>
+            <h3 class="text-xl font-bold">Successfully!</h3>
+            <div class="modal-action">
+                <form method="dialog">
+                    <button class="btn">Close Confirmation</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+    <!-- Success Modal End -->
+
+    <!-- script file -->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/utilities.js"></script>
+    <script src="assets/js/donate.js"></script>
+</body>
+
+</html>

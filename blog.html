@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="assets/css/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="assets/js/tailwind.js"></script>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <!-- Header Section Start -->
+    <header class="bg-lime-50/90 pt-1 pb-4 sticky top-0 shadow-md z-50">
+        <div class="container m-auto lg:px-16">
+            <div class="navbar">
+                <div class="navbar-start ">
+                    <a href="index.html" class="btn text-xl font-bold bg-[#B4F461]">Home</a>
+                </div>
+
+                <div class="navbar-center">
+                    <img src="assets/images/logo.png" alt="Image" class="">
+                    <a class="btn btn-ghost text-3xl font-bold md:block md:text-2xl hidden pt-1">Donate Bangladesh</a>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="flex justify-end items-center">
+                        <img src="assets/images/coin.png" class="w-8" alt="Image">
+                        <span class="text-xl font-semibold ml-1"> <span id="available-balance">5500</span> BDT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Main Section Start -->
+    <main class="container m-auto lg:px-20 px-4">
+        <!-- Page Heading Start  -->
+        <h1 class="text-2xl font-bold pt-12 py-8">Important FAQ</h1>
+        <div class="donation-history-container ">
+
+            <div class="collapse collapse-arrow border rounded-none">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                    <p>The Document Object Model (DOM) is a way to represent an HTML or XML document as a tree
+                        structure. Each part of the webpage (like text, images, or buttons) is called a node, and
+                        JavaScript can interact with these nodes to change the content or style of the webpage
+                        dynamically.</p>
+                </div>
+            </div>
+
+            <div class="collapse collapse-arrow border rounded-none">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                    <p>I can select an element from the DOM using methods like:</p>
+                    <br>
+                    <ol>
+                        <li><b>1. getElementById():</b> Selects an element by its id attribute.</li>
+                        <li><b>2. getElementsByClassName():</b> Selects elements by their class name.</li>
+                        <li><b>3. getElementsByTagName():</b> Selects elements by their tag name.</li>
+                        <li><b>4. querySelector():</b> Selects the first element that matches a specified CSS selector.
+                        </li>
+                        <li><b>5. querySelectorAll():</b> Selects all elements that match a specified CSS selector.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="collapse collapse-arrow border rounded-none">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and
+                    why is it useful?</div>
+                <div class="collapse-content">
+                    <p>Event delegation is a technique in JavaScript where instead of attaching event listeners to each
+                        individual element, i attach a single event listener to a parent element. This listener can
+                        handle events for all child elements, even if they are added dynamically later.
+                    </p>
+                    <br>
+                    <p>Why is it useful?
+                    </p>
+                    <br>
+                    <ol>
+                        <li><b>1. Efficiency:</b> Reduces the number of event listeners, improving performance.</li>
+                        <li><b>2. Dynamic Elements:</b> Works for elements added to the DOM after the page is loaded.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="collapse collapse-arrow border rounded-none">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles
+                    using the DOM?</div>
+                <div class="collapse-content">
+                    <p><b>To manipulate an element's attributes,</b> i can use methods to get or set the values of
+                        attributes like src, href, etc. For example, i can change an image's source or a link's URL.
+                        <br />
+                        <b>To manipulate an element's styles,</b> i can directly change its inline CSS styles, such as
+                        background color, font size, etc.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Page Heading End  -->
+    </main>
+    <!-- Main Section End -->
+
+    <!-- Footer Section Start  -->
+    <footer class=" footer footer-center bg-lime-50/90 text-base-content mt-12 p-4 py-8">
+        <aside>
+            <p class="text-base">Copyright © All right reserved by <span class="font-bold">Hasibur Rahman Biplab</span></p>
+        </aside>
+    </footer>
+    <!-- Footer Section End -->
+
+</body>
+
+</html>
